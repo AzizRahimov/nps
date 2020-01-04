@@ -10,6 +10,11 @@ func main() {
 	promoters := 0
 	detractors := 0
 
+
+
+
+
+
 	promotersLowerBound := 9
 	if score1 >= promotersLowerBound {
 		promoters = promoters + 1
