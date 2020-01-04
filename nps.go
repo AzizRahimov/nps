@@ -10,24 +10,26 @@ func main() {
 	promoters := 0
 	detractors := 0
 
-	if score1 >=9{
+	promotersLowerBound := 9
+	if score1 >= promotersLowerBound {
 		promoters = promoters + 1
 	}
-	if score1 >=6{
+	detractors = 6
+	if score1 >= detractors {
 		detractors = detractors + 1
 	}
-	if score2 >=9{
+	if score2 >= promotersLowerBound {
 		promoters = promoters + 1
 	}
 
 
-	if score2 >=6{
+	if score2 >= detractors {
 		detractors = detractors + 1
 	}
-	if score3 >=9{
+	if score3 >= promotersLowerBound {
 		promoters = promoters + 1
 	}
-	if score3 >=9{
+	if score3 >= promotersLowerBound {
 		promoters = promoters + 1
 	}
 	nps := (promoters - detractors ) * 100 / 3
